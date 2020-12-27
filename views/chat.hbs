@@ -1,0 +1,28 @@
+<div class="greet">
+<div id="messages">
+  {{#each messages}}
+  <div>
+    <strong>{{this.author.name}}: </strong>
+    {{this.text}}
+  </div>
+  {{/each}}
+</div>
+
+<form name="chatForm">
+  <input type="text" name="username" style="display: none;" value="{{username}}">
+  <input type="text" name="message" placeholder="введите текст">
+  <button>Отправить!</button>
+</form>
+</div>
+
+<script defer src="/js/chat.js"></script>
+
+  <style>
+   html {
+    height: 100%; 
+    width: 100%;
+    background: #000  
+          no-repeat right bottom; /* Путь к графическому файлу с фоном */
+    color: #fff; /* Белый цвет текста */
+   }
+  </style>

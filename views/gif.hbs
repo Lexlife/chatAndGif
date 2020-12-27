@@ -1,0 +1,22 @@
+  <script defer src="/js/main.js"></script>
+
+  {{#if username}}
+  <main class="gif">
+    <form>
+      <label for="search">Поиск гифок:</label>
+      <input id="search" type="search" placeholder="введите тему гифки"/>
+      <button id="btnSearch">Найти!</button>
+    </form>
+    <div class="out"></div>
+  </main>
+  {{/if}}
+
+ <style>
+   html {
+    height: 100%; 
+    width: 100%;
+    background: #000 
+          no-repeat right bottom; /* Путь к графическому файлу с фоном */
+    color: #fff; /* Белый цвет текста */
+   }
+  </style>

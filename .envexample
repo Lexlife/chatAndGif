@@ -1,0 +1,3 @@
+SECRET=secret phrase
+DB=string to connect to db
+PORT=port fot http or https

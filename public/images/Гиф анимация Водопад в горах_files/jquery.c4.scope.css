@@ -1,0 +1,22 @@
+
+.scope_element_info{	
+	margin: 20px 0px;
+	padding: 5px 10px;
+	background: #ff9900;
+	color: #fff;
+	text-align:center;
+}
+
+.scope_element_info a{color:#fff}
+
+.scope_element_info .scope_element_info_inner{ display:table; width:100%; position:relative; }
+.scope_element_info .scope_element_info_inner .scope_element_info_inner_title{  }
+.scope_element_info .scope_element_info_inner .scope_element_info_title{ }
+.scope_element_info .scope_element_info_inner .scope_element_info_close{float:right;  color:#fff; font-size:19px; opacity:0.5; display:block; line-height:17px; margin-left:10px;}
+.scope_element_info .scope_element_info_inner .scope_element_info_close:hover{ opacity:1; }
+.scope_element_info .scope_element_info_inner .scope_element_info_count{margin-left:10px;}
+
+.scope_element_info .scope_inacive{opacity:0.5; cursor:default; text-decoration:none;}
+ 
+.scope_element_info .scope_arrow_prev{float:left; display:inline-block; margin-right:10px;}
+.scope_element_info .scope_arrow_next{float:right;  display:inline-block; margin-left:10px;}

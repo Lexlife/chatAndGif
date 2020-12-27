@@ -1,0 +1,39 @@
+{
+  "name": "giphy",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "mon": "fuser -n tcp -k 3000; fuser -n tcp -k 1313; clear; nodemon app.js --ignore sessions",
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "15.x"
+  },
+  "keywords": [
+    "giphy"
+  ],
+  "author": "Alexander",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.11.5",
+    "morgan": "~1.9.1",
+    "node-fetch": "^2.6.1",
+    "sha256": "^0.2.0",
+    "ws": "^7.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.6"
+  }
+}

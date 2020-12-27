@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.png" />
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <div class="nav">
+    <a href="/">Главная страница</a>
+    {{#if username}}
+    <a href="/users/gif">Найти Гифку</a>
+    <a href="/users/chat">Войти в чат</a>
+    <a href="/users/logout">Сменить пользователя</a>
+    {{else}}
+    <a href="/users/signup">Зарегистрироваться</a>
+    <a href="/users/signin">Авторизоваться</a>
+    {{/if}}
+  </div>
+  {{{body}}}
+</body>
+
+</html>
