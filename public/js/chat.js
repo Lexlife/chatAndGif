@@ -3,7 +3,7 @@ let adress = window.location.origin;
 const newAdress = adress.replace('http', 'ws');
 const wsocket = new WebSocket(`${newAdress}://${window.location.host}:1313`);
 // const wsocket = new WebSocket('ws://localhost:1313'); // создаем новое подключение к серверу по адресу 'ws://localhost:1313'
-//локолхост переписать, 
+// локолхост переписать,
 
 wsocket.onopen = (something) => { // когда установлено соединение
   console.log(something, 'hello!');
@@ -14,7 +14,7 @@ let myMessage = JSON.parse(mess.data); // получаем стркоу и пр�
   console.log(mess);
   const { author, message } = myMessage; // достаем нужные даные
   // const regEx = https:\/\/api\.giphy\.com\/v1\/gifs\/search\?q=;
-  
+
   // if (message == regEx) {
   //   mesages.innerHTML += `
   //   <div>
