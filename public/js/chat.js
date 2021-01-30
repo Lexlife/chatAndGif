@@ -1,7 +1,10 @@
 const mesages = document.querySelector('#messages');
 let adress = window.location.origin;
 const newAdress = adress.replace('http', 'ws');
+console.log('newAdress', newAdress)
 const wsocket = new WebSocket(`${newAdress}://${window.location.host}:1313`);
+
+console.log('wsocket', wsocket)
 // const wsocket = new WebSocket('ws://localhost:1313'); // создаем новое подключение к серверу по адресу 'ws://localhost:1313'
 // локолхост переписать,
 
